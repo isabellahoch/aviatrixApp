@@ -17,7 +17,7 @@ func gauges(myPlane : Aviatrix) {
 //    print("| Fuel:      | \(myPlane.fuelLevel) gallons")
 //    print("| Max Fuel:  | \(myPlane.maxFuel) gallons")
 //    print("| MPG:       | \(myPlane.milesPerGallon)")
-//    print("| Fuel Bill: | \(myPlane.fuelCost)")
+//    print("| Fuel Bill: | \(myPlane.fuelCost)")q
 }
 
 func fly(myPlane : Aviatrix) {
@@ -74,9 +74,9 @@ func fuelCheck(myPlane : Aviatrix, destination : String) -> Bool {
     return true
 }
 
-var plane = Aviatrix()
+var plane = Aviatrix(authorName: "☁︎ Isabella Hochschild ☁︎")
 
-print("Welcome to the Aviatrix Flight System by _________")
+print("Welcome to the Aviatrix Flight System by \(plane.author)")
 plane.start()
 
 print("You're currently in _________")
@@ -105,8 +105,9 @@ while command != "q" {
     }
     else if command != "q" {
         print("⚠️Please enter a valid command⚠️")
+//        print("⚠️ please enter a valid command ⚠️")
     }
 }
 
 print(" ")
-print("Thanks for flying with _________ airline!")
+print("Thanks for flying with \(plane.author) airline!")
